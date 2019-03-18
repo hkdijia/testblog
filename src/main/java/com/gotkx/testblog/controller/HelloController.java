@@ -26,10 +26,10 @@ public class HelloController {
         return "test2";
     }
 
-    /*@RequestMapping("/")
+    @RequestMapping("/")
     public String login(){
-        return "redirect:/article";
-    }*/
+        return "redirect:/article/";
+    }
 
 /*
     @RequestMapping("/hi")

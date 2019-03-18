@@ -31,7 +31,7 @@ public class WebSecurityConfig extends WebMvcConfigurerAdapter {
          */
         registry.addInterceptor(new MyInterceptor())
                 .addPathPatterns("/**")
-                .excludePathPatterns("/article/**");
+                .excludePathPatterns("/article/**", "/bootstrap/**", "/css/**");
 
                 /*
 

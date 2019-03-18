@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>首页</title>
-    <link th:href="@{/bootstrap/css/bootstrap.css}" rel="stylesheet"/>
-    <link th:href="@{/bootstrap/css/bootstrap-theme.css}" rel="stylesheet"/>
+    <link th:href="@{/bootstrap/css/bootstrap.css}"   rel="stylesheet"/>
+    <link th:href="@{/bootstrap/css/bootstrap-theme.css}" href="" rel="stylesheet"/>
 </head>
 
 <body>
 <!--引入导航栏-->
-<div th:include="/common/top :: top"></div>
+<div th:replace="../templates/common/top :: test"></div>
 
 <div th:if="${not #lists.isEmpty(articles)}">
     <div th:each="articles:${articles}">

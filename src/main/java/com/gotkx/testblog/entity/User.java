@@ -8,9 +8,14 @@ import javax.persistence.*;
 @Table(name = "user")
 public class User {
 
-    @Id
+    /*@Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid")
+    @Column(name = "id", columnDefinition = "varchar(64) binary")
+    private int id;*/
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", columnDefinition = "varchar(64) binary")
     private int id;
 

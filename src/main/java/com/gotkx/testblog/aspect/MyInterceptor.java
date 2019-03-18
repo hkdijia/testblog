@@ -18,7 +18,8 @@ public class MyInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         if(request.getRequestURI().equals("/admin/login")
-                || request.getRequestURI().equals("/admin/dologin")) {
+                || request.getRequestURI().equals("/admin/dologin")
+                || request.getRequestURI().equals("/")) {
             return true;
         }
 
